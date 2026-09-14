@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nossa História ♡</title>
+<meta name="description" content="Uma história feita de lembranças.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+:root{--rose:#d98b9d;--deep:#5a2638;--paper:#fff8fa;--ink:#3b2730;--muted:#856b74}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#fff8fa,#f8dbe3 45%,#fff7f9);color:var(--ink);font-family:Montserrat,Arial,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:radial-gradient(#8b3d55 0.7px,transparent .7px);background-size:18px 18px}
+button{font:inherit}.container{width:min(1080px,92vw);margin:auto}
+.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:50px 20px;position:relative;overflow:hidden;background:
+radial-gradient(circle at 50% 35%,rgba(255,255,255,.8),transparent 35%),
+linear-gradient(145deg,#f5b9c7,#fff0f4 55%,#eab0bf)}
+.hero h1{font:600 clamp(44px,8vw,88px) "Cormorant Garamond",serif;margin:18px 0 8px;color:#672d42}
+.hero .small{letter-spacing:.18em;text-transform:uppercase;font-size:11px;color:#805566}
+.hero p{max-width:580px;margin:0 auto 28px;line-height:1.8;color:#6b4b56}
+.enter{border:1px solid #a64f6b;background:#fff8fa;color:#7a314b;padding:13px 27px;border-radius:999px;cursor:pointer;box-shadow:0 8px 30px #a34b6322}
+.heart{font-size:28px;color:#b54c69}.section{padding:90px 0}.intro{text-align:center}.intro h2,.timeline h2{font:600 50px "Cormorant Garamond",serif;color:#6b2d43;margin:0 0 12px}
+.musicbar{position:sticky;top:12px;z-index:20;width:min(600px,90vw);margin:0 auto 10px;background:#fff9fbdd;backdrop-filter:blur(12px);border:1px solid #dba5b3;border-radius:18px;padding:12px 16px;display:flex;align-items:center;gap:12px;box-shadow:0 12px 35px #6c26361c}
+.musicbar button{border:0;background:#7c314a;color:white;border-radius:50%;width:40px;height:40px;cursor:pointer}.track{flex:1}.track b{display:block;font-size:12px}.track span{font-size:10px;color:var(--muted)}
+.timeline{position:relative}.timeline:before{content:"";position:absolute;left:24px;top:100px;bottom:60px;width:1px;background:#cf8799}
+.item{display:grid;grid-template-columns:50px 1fr;gap:24px;margin:0 0 65px;align-items:start}.dot{width:16px;height:16px;border:2px solid #d07991;border-radius:50%;background:#fff;margin:7px 0 0 16px;position:relative;z-index:2}.date{font:500 20px "Cormorant Garamond",serif;color:#9a415d}.caption{font-size:12px;color:#80616c;letter-spacing:.03em;margin:3px 0 18px}.item h3{font:600 35px "Cormorant Garamond",serif;color:#6b2d43;margin:0 0 7px}.item p{line-height:1.8;color:#6e555e;max-width:680px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.grid img,.polaroid img{display:block;width:100%;height:auto;border-radius:8px}.photo{background:#fff;padding:10px 10px 16px;box-shadow:0 12px 30px #6d27371a;border:1px solid #f0d5dc}.photo:nth-child(even){transform:rotate(1deg)}.photo:nth-child(odd){transform:rotate(-1deg)}
+.full{grid-column:1/-1}.datebreak{text-align:center;padding:75px 20px;background:linear-gradient(135deg,#f4b3c2,#fff1f4);border-top:1px solid #e4b3bf;border-bottom:1px solid #e4b3bf}.datebreak .big{font:600 clamp(60px,12vw,120px) "Cormorant Garamond",serif;color:#7c3049}.datebreak h2{font:500 42px "Cormorant Garamond",serif;margin:0;color:#6a2c42}.counter{display:flex;justify-content:center;gap:10px;margin:28px auto 0;flex-wrap:wrap}.counter div{min-width:90px;background:#fff8fa;border:1px solid #e0aab7;border-radius:12px;padding:12px}.counter strong{display:block;font-size:28px;color:#713149}.counter span{font-size:9px;letter-spacing:.12em;color:#98717c}
+.letter{max-width:800px;margin:auto;background:#fffafb;border:1px solid #edc8d1;padding:clamp(28px,6vw,65px);box-shadow:0 20px 60px #67283a14;position:relative}.letter:after{content:"♡";position:absolute;right:28px;top:20px;color:#cf7189;font-size:26px}.letter h2{font:600 48px "Cormorant Garamond",serif;color:#6b2d43;margin-top:0}.letter p{line-height:2;color:#59434b}.signature{text-align:right;font:500 30px "Cormorant Garamond",serif;color:#7d334b;margin-top:35px}
+.things{max-width:900px;margin:auto;text-align:center}.things-title{font:600 44px "Cormorant Garamond",serif;color:#6b2d43;margin:0 0 8px}.things-intro{font-size:12px;color:#8b6b75;margin:0 auto 30px;letter-spacing:.04em}.things-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.thing{position:relative;background:linear-gradient(145deg,#fffdfd,#fff4f7);border:1px solid #e8c4ce;padding:30px 28px;text-align:left;box-shadow:0 12px 35px #8a435314;border-radius:4px}.thing:before{content:"♡";position:absolute;right:18px;top:10px;color:#d68ca0;font-size:22px}.thing h3{font:500 27px "Cormorant Garamond",serif;color:#74344b;margin:0 0 8px}.thing p{font-size:12px;line-height:1.8;color:#6d555d;margin:0}.debt-section{margin-top:35px;padding:42px 28px 34px;background:linear-gradient(180deg,#f9e0e7,#f3c6d2);border:1px solid #dca1b2;border-radius:28px;box-shadow:inset 0 1px #fff8,0 18px 45px #7d304318}.debt-title{font:600 44px "Cormorant Garamond",serif;color:#64283e;text-align:center;margin:0 0 5px}.debt-intro{text-align:center;font-size:11px;color:#855565;margin:0 0 24px}.locks{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.lock{background:#fff9fb;border:1px dashed #bf7188;border-radius:16px;padding:28px 18px;text-align:center;min-height:175px;cursor:pointer;transition:.25s;box-shadow:0 8px 20px #71304910}.lock:hover{transform:translateY(-5px) rotate(-1deg);box-shadow:0 15px 35px #6d273719}.lock .key{font-size:25px;margin-bottom:8px}.lock h3{font:500 25px "Cormorant Garamond",serif;color:#6b2d43}.answer{display:none;color:#8b3a55;line-height:1.7;font-size:12px}.lock.open .answer{display:block}.lock.open .key{display:none}.lock.open h3{display:none}
+.final{background:linear-gradient(145deg,#5a2638,#8e415a);color:#fff;padding:110px 0}.final h2{font:500 58px "Cormorant Garamond",serif;text-align:center;margin:0 0 10px}.final .sub{text-align:center;opacity:.8}.finalgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:40px auto;max-width:900px}.polaroid{background:#fff;padding:12px 12px 30px;box-shadow:0 18px 50px #16071155}.polaroid:first-child{transform:rotate(-2deg)}.polaroid:last-child{transform:rotate(2deg)}.finalquote{text-align:center;font:500 clamp(30px,5vw,52px) "Cormorant Garamond",serif;margin:50px auto 0;max-width:800px}.thanks{text-align:center;margin-top:40px;font-size:12px;letter-spacing:.1em;opacity:.75}
+footer{text-align:center;padding:30px;color:#8d6974;font-size:10px}
+@media(max-width:720px){.grid,.locks,.things-grid,.finalgrid{grid-template-columns:1fr}.item{grid-template-columns:34px 1fr;gap:14px}.timeline:before{left:16px}.dot{margin-left:8px}.item h3{font-size:30px}.section{padding:65px 0}.musicbar{position:sticky}.finalgrid{padding:0 10px}}
+</style>
+</head>
+<body>
+<section class="hero" id="top">
+<div>
+<div class="heart">♡</div>
+<div class="small">Uma pequena lembrança</div>
+<h1>Fiz uma pequena coisa para você...</h1>
+<p>Uma história, algumas lembranças e tudo aquilo que eu quis guardar no coração.</p>
+<button class="enter" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">♡ Entrar</button>
+</div>
+</section>
+
+<div class="container">
+<div class="musicbar">
+<button id="play" aria-label="Tocar música">▶</button>
+<div class="track"><b id="trackName">Trevo</b><span>As músicas podem ser adicionadas depois nesta mesma página.</span></div>
+</div>
+</div>
+
+<section class="section timeline" id="story">
+<div class="container">
+<h2>Nossa história</h2>
+<div class="item">
+<div class="dot"></div><div><div class="date">06/09</div><div class="caption">Onde tudo começou...</div><p>Antes de existir um nós, existiu um primeiro momento.</p></div>
+</div>
+
+<div class="item">
+<div class="dot"></div><div><h3>A dança</h3><p>Entre risadas, brincadeiras e momentos que pareciam simples, fomos ficando cada vez mais próximos.</p>
+<div class="grid"><div class="photo"><img src="assets/01_danca.png" alt="Lembrança dançando"></div></div></div>
+</div>
+
+<div class="item">
+<div class="dot"></div><div><h3>A aproximação</h3><p>Ainda não éramos oficialmente nós... mas alguma coisa já estava mudando.</p>
+<div class="grid"><div class="photo"><img src="assets/02_homem_aranha.png" alt="Lembrança com roupa do Homem-Aranha"></div></div></div>
+</div>
+</div>
+</section>
+
+<section class="datebreak">
+<div class="big">10/09</div>
+<h2>O nosso começo</h2>
+<p>O dia em que deixou de ser quase... e passou a ser nós. ♡</p>
+<div class="counter">
+<div><strong>00</strong><span>DIAS</span></div><div><strong>00</strong><span>HORAS</span></div><div><strong>00</strong><span>MINUTOS</span></div><div><strong>00</strong><span>SEGUNDOS</span></div>
+</div>
+</section>
+
+<section class="section timeline">
+<div class="container">
+<div class="item">
+<div class="dot"></div><div><h3>♡</h3><p>Quando percebi, já existia carinho demais para fingir que era só uma brincadeira.</p>
+<div class="grid">
+<div class="photo"><img src="assets/03_coracoes_01.png" alt="Lembrança"></div>
+<div class="photo"><img src="assets/04_coracoes_02.png" alt="Lembrança"></div>
+<div class="photo"><img src="assets/05_coracoes_03.png" alt="Lembrança"></div>
+<div class="photo"><img src="assets/06_coracoes_04.png" alt="Lembrança"></div>
+<div class="photo full"><img src="assets/07_coracoes_05.png" alt="Lembrança"></div>
+</div></div>
+</div>
+
+<div class="item">
+<div class="dot"></div><div><p>Foram as risadas, as brincadeiras e aqueles momentos simples que acabaram se tornando especiais.</p>
+<div class="grid">
+<div class="photo"><img src="assets/08_campo_01.png" alt="Lembrança no campo"></div>
+<div class="photo"><img src="assets/09_campo_02.png" alt="Lembrança no campo"></div>
+<div class="photo full"><img src="assets/10_campo_03.png" alt="Lembrança no campo"></div>
+</div></div>
+</div>
+
+<div class="item">
+<div class="dot"></div><div><p>Em algum momento, você deixou de ser apenas parte dos meus dias e passou a fazer parte das minhas melhores lembranças.</p>
+<div class="grid">
+<div class="photo"><img src="assets/11_praia_01.png" alt="Lembrança na praia"></div>
+<div class="photo"><img src="assets/12_praia_02.png" alt="Lembrança na praia"></div>
+<div class="photo full"><img src="assets/13_praia_03.png" alt="Lembrança na praia"></div>
+</div></div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container letter">
+<h2>Querida...</h2>
+<p>Eu só quero te dizer o quanto eu gosto de você. O quanto te admiro. Você é linda, por dentro e por fora. É forte, inteligente, meiga, incrível, trabalhadora, guerreira, espetacular e poderosa.</p>
+<p>Você me fez rir inúmeras vezes, me trouxe momentos que eu levo pra vida e tornou meus dias mais leves. Sou muito grato por ter tido você na minha vida, por cada momento, por cada conversa, por cada risada, por tudo que a gente viveu.</p>
+<p>Eu aceito a separação e respeito o seu caminho. Isso não apaga o carinho, a admiração e a importância que você teve e continua tendo na minha história.</p>
+<p>Você é uma verdadeira mulher, e eu tenho muito orgulho de tudo o que você é.</p>
+<div class="signature">Com carinho,<br>Roger ♡</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container things">
+<h2 class="things-title">Coisas que talvez você não saiba...</h2>
+<p class="things-intro">Algumas coisas que talvez eu nem tenha conseguido dizer o suficiente.</p>
+<div class="things-grid">
+<div class="thing"><h3>Eu admiro você.</h3><p>Pela mulher forte que você é, pela sua inteligência, pela sua força e por nunca deixar de lutar pelo que acredita.</p></div>
+<div class="thing"><h3>Você me fez muito feliz.</h3><p>Entre risadas, brincadeiras e momentos simples, você conseguiu deixar muitos dos meus dias mais leves.</p></div>
+<div class="thing"><h3>Tenho orgulho de você.</h3><p>Do seu jeito, da sua garra, do seu coração e de tudo aquilo que faz você ser essa mulher incrível.</p></div>
+<div class="thing"><h3>Você foi importante para mim.</h3><p>E algumas pessoas passam pela nossa vida de um jeito que simplesmente não dá para esquecer.</p></div>
+</div>
+
+<div class="debt-section">
+<h2 class="debt-title">Coisas que ainda me deve...</h2>
+<p class="debt-intro">Agora sim... chegou a hora de cobrar as dívidas 😂♡</p>
+<div class="locks">
+<div class="lock" onclick="this.classList.toggle('open')"><div class="key">🔒</div><h3>Você me deve:</h3><div class="answer">🎬 Assistir um filme comigo.</div></div>
+<div class="lock" onclick="this.classList.toggle('open')"><div class="key">🔒</div><h3>Você me deve:</h3><div class="answer">📺 Assistir uma série completa comigo.</div></div>
+<div class="lock" onclick="this.classList.toggle('open')"><div class="key">🔒</div><h3>Você me deve:</h3><div class="answer">🛒 Terminarmos nosso mercado.<br><br><b></b></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" style="padding-top:20px">
+<div class="container letter">
+<h2 style="text-align:center">E talvez a parte mais difícil...</h2>
+<p style="text-align:center">Eu aceito o caminho que você escolher. Não quero transformar essa lembrança em um pedido, nem em uma tentativa de mudar o que aconteceu.</p>
+<p style="text-align:center"><b>Só quero guardar o que foi bonito pra nós.</b> ♡</p>
+</div>
+</section>
+
+<section class="final">
+<div class="container">
+<h2>Uma última lembrança...</h2>
+<div class="sub">Algumas histórias não terminam como a gente espera, mas ainda assim continuam vivas em nós.</div>
+<div class="finalgrid">
+<div class="polaroid"><img src="assets/14_hospital_beijo.png" alt="Última lembrança de um beijo"></div>
+<div class="polaroid"><img src="assets/15_hospital_maos.png" alt="Última lembrança de mãos dadas"></div>
+</div>
+<div class="finalquote">“Só quero guardar o que foi bonito pra nós!”</div>
+<div class="thanks">Obrigado por tudo que fomos. ♡</div>
+</div>
+</section>
+<footer>Feito para guardar uma história, não para apagar o que foi vivido.</footer>
+
+<script>
+const play=document.getElementById('play');
+let audio=null;
+play.addEventListener('click',()=>{
+  if(!audio){
+    audio=new Audio('music/partilhar.mp3');
+    audio.loop=true;
+    audio.play().catch(()=>alert('Adicione o arquivo music/partilhar.mp3 para tocar a música.'));
+    play.textContent='Ⅱ';
+  }else if(audio.paused){audio.play();play.textContent='Ⅱ';}else{audio.pause();play.textContent='▶';}
+});
+</script>
+<script>const playlist = [
+  { title: "Partilhar — Rubel", file: "music/partilhar.mp3" },
+  { title: "Trevo (Tu) — ANAVITÓRIA ft. Tiago Iorc", file: "music/trevo.mp3" },
+  { title: "Pra Você Guardei o Amor — Nando Reis & Ana Cañas", file: "music/pra-voce-guardei-o-amor.mp3" }
+];</script>
+</body>
+</html>
